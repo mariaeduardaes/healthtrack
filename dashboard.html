@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Track</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="./src/assets/css/global-styles.css" />
+    <link rel="stylesheet" href="./src/assets/css/dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <div class="d-flex justify-content-between align-items-center p-3">
+        <div class="flex-grow-1 d-flex align-items-center me-3">
+          <img
+            class="me-3"
+            src="./src/assets/img/foto-perfil.png"
+            alt="Perfil"
+          />
+
+          <div>
+            <h5>Bem vinda,</h5>
+            <h3><strong>Maria Eduarda!</strong></h3>
+          </div>
+        </div>
+
+        <div>
+          <span class="d-block">Peso atual: 75kg</span>
+          <span class="d-block">Peso inicial: 80kg</span>
+          <span class="d-block">Meta: 70kg</span>
+        </div>
+      </div>
+    </header>
+    <main class="d-flex justify-content-start">
+      <div class="d-flex align-items-start menu p-3">
+        <div
+          class="nav flex-column nav-pills"
+          id="v-pills-tab"
+          role="tablist"
+          aria-orientation="vertical"
+        >
+          <a
+            class="nav-link"
+            id="v-pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-home"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-home"
+            aria-selected="true"
+          >
+            Home
+          </a>
+          <a
+            class="nav-link"
+            id="v-pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-profile"
+            aria-selected="false"
+          >
+            Perfil
+          </a>
+          <a
+            class="nav-link"
+            id="v-pills-messages-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-messages"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-messages"
+            aria-selected="false"
+          >
+            Conquistas
+          </a>
+          <a
+            href="signin.html"
+            class="nav-link"
+            id="v-pills-settings-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-settings"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-settings"
+            aria-selected="false"
+          >
+            Sair
+          </a>
+        </div>
+      </div>
+      <section class="flex-grow-1">
+        <div
+          class="content p-3 d-flex justify-content-between align-items-start"
+        >
+          <div class="table-wrapper flex-grow-1 me-3">
+            <table class="table table-responsive">
+              <thead>
+                <tr>
+                  <th scope="col">Data</th>
+                  <th scope="col">Peso</th>
+                  <th scope="col">Ações</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>23/06/2021</td>
+                  <td>75 kg</td>
+                  <td>
+                    <div class="d-flex">
+                      <i class="bi bi-pen-fill me-3"></i>
+                      <i class="bi bi-trash-fill"></i>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>18/06/2021</td>
+                  <td>78 kg</td>
+                  <td>
+                    <div class="d-flex">
+                      <i class="bi bi-pen-fill me-3"></i>
+                      <i class="bi bi-trash-fill"></i>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10/06/2021</td>
+                  <td>80 kg</td>
+                  <td>
+                    <div class="d-flex">
+                      <i class="bi bi-pen-fill me-3"></i>
+                      <i class="bi bi-trash-fill"></i>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <button type="button" class="btn btn-dark mb-3 btn-add-weight">
+              Adicionar pesagem
+            </button>
+
+            <div class="card-congratulations text-center mb-3">
+              <i
+                class="bi bi-bookmark-check-fill"
+                style="font-size: 2rem; color: green"
+              ></i>
+              <h2>Parabéns,</h2>
+              <span class="d-block mb-3"
+                >Você já perdeu <strong>5kg</strong><br />desde 10/06/2021</span
+              >
+            </div>
+
+            <div class="card-congratulations text-center">
+              <i class="bi bi-clock-fill" style="font-size: 2rem"></i>
+              <h2>Foco!</h2>
+
+              <span class="d-block"
+                >Faltam apenas <strong>10 dias</strong><br />
+                para completar sua meta</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

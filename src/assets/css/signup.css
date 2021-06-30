@@ -1,0 +1,18 @@
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.signup {
+  min-width: 560px;
+  max-width: 560px;
+}
+
+.signup-content {
+  width: 480px;
+}
+
+.wallpaper {
+  background: url("../img/wallpaper-signup.jpeg");
+  background-size: cover;
+}
